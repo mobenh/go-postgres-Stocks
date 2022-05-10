@@ -29,15 +29,18 @@ CREATE TABLE stocks (
   company TEXT
   );
 ```
-* Download the repository to your computer, go to project file, and run it
+* Download the repository to your computer and go to project file
 ```
 git clone https://github.com/mobenh/go-postgres
 cd go-postgres
-go run main.go
 ```
 * Edit .env file with  your database username and password
 ```
 POSTGRES_URL="postgres://username:password@localhost:5432/stocksdb?sslmode=disable"
+```
+* Run code
+```
+go run main.go
 ```
 * Test APIs with Postman
   * Create a POST request with localhost:8080/api/newstock
